@@ -17,7 +17,7 @@ class CompaniesController extends Controller
      */
     public function index()
     {
-        // ulugmurod7777
+        
         $companies  = Company::orderByDesc('created_at')->paginate(20);
 
         return view('companies.index',[
